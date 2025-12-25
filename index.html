@@ -229,7 +229,7 @@
 
         /* Main Tab Navigation */
         .main-tabs {
-            background: white;
+            background: rgb(123, 231, 250);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 130px;
@@ -677,11 +677,23 @@
             <h2>Advancing Educational Research Worldwide</h2>
             <p>Publishing cutting-edge research that shapes the future of education</p>
             <div class="cta-buttons">
-                <a href="#submit" class="btn btn-primary">Submit Your Research</a>
+                <a href="submit.html" class="btn btn-primary" style="background: var(--white); color: var(--primary); margin-left: 10px;">Submit Your Research</a>
+                <!-- <a href="submit.html" class="btn" style="background: var(--white); color: var(--primary); margin-left: 10px;">Submit Research</a> -->
                 <a href="#" class="btn btn-secondary" onclick="openTab(event, 'published-papers')">Browse Articles</a>
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Main Tab Navigation -->
     <div class="main-tabs">
@@ -721,10 +733,11 @@
                     <p class="article-excerpt">
                         An in-depth exploration of artificial intelligence applications in educational settings, examining how AI-powered tools enhance personalized learning experiences and improve student engagement across diverse learning environments.
                     </p>
-                    <a href="#" class="read-more">Read Full Article →</a>
+                    <a href="Images/111.pdf" class="read-more">Read Full Article →</a>
                 </div>
             </div>
 
+           
             <div class="article-card">
                 <div class="article-badge">HIGHLY CITED</div>
                 <div class="article-content">
@@ -758,6 +771,8 @@
             </div>
         </div>
     </div>
+
+
 
     <!-- Published Papers Tab -->
     <div id="published-papers" class="tab-content">
@@ -1046,11 +1061,24 @@
     </div>
 
     <footer>
-        <div class="footer-content">
+        <div class="footer-content" id="about">
             <div class="footer-section">
                 <h3>About IJRES</h3>
                 <p>International Journal for Research in Educational Studies is a bi-yearly, open access, double-blind peer-reviewed journal dedicated to advancing educational research globally.</p>
             </div>
+            <div class="footer-section" id="contact">
+                <div class="hero-content"></div>
+                <h3>Contact US</h3>
+                <p>Mr.Sankar Ph.D(Asst Prof)<br>
+                Chennai<br>
+                India<br>
+                </p>
+                <p style="margin-top: 15px;">
+                    📧 Sankar@gmail.com<br>
+                    🌐 www.Sankar.org
+                </p>
+            </div>
+
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
@@ -1070,18 +1098,32 @@
                     <li><a href="#">Call for Papers</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Mr.Sankar Ph.D(Asst Prof)<br>
-                Vellow<br>
-                Chennai<br>
-                India</p>
-                <p style="margin-top: 15px;">
-                    📧 Sankar@gmail.com<br>
-                    🌐 www.Sankar.org
-                </p>
+
+
+        <!-- vijayakumar -->
+    <!-- <section id="Contact1">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p>We build clear, simple dashboards and automated Excel tools that help business owners understand their numbers quickly. Based in Iyyappanthangal, we support all types of local businesses.</p>
+                <h3>What You Get</h3>
+                <ul>
+                    <li>Smart dashboards that visualize your business data</li>
+                    <li>Automated Excel reports that save time</li>
+                    <li>Cleaner, well-structured data</li>
+                    <li>Easy tracking of sales & expenses</li>
+                    <li>Significant time savings on manual work</li>
+                </ul>
+                <div style="margin-top: 40px; text-align: center;">
+                    <button class="btn" onclick="window.open('https://wa.me/919095869474'),_blank">Contact Us on WhatsApp</button>
+                </div>
             </div>
         </div>
+    </section> -->
+
+
+        </div>
+
         <div class="footer-bottom">
             <p>&copy; 2021-2025 Sankar. All rights reserved. | ISSN: 2208-2115</p>
         </div>
@@ -1153,3 +1195,6 @@
             observer.observe(el);
         });
     </script>
+
+
+

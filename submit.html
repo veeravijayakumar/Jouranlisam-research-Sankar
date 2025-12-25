@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IJELLS - Submit Paper</title>
+    <!-- Link to your external CSS if you have one, otherwise ignore -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    /* --- BASIC RESET & DARK THEME --- */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #02182e; /* Dark Navy Background */
+        min-height: 100vh;
+    }
+
+    /* --- HEADER STYLES --- */
+    header {
+        padding: 20px 0;
+        background: rgba(0,0,0,0.2);
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .nav-wrapper {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    /* --- FORM CONTAINER (Improved for Readability) --- */
+    .form-container {
+        background: rgba(255, 255, 255, 0.1); /* Glassy dark background */
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        max-width: 700px;
+        margin: 50px auto;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    /* --- INPUT STYLES --- */
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #ccc;
+        font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #444;
+        background: rgba(0, 0, 0, 0.3);
+        color: white;
+        font-size: 1rem;
+    }
+
+    input:focus, textarea:focus, select:focus {
+        outline: none;
+        border-color: #b4ee57; /* Green focus */
+    }
+
+    /* Button Style */
+    .btn {
+        background: #b4ee57;
+        color: #02182e;
+        border: none;
+        padding: 15px 50px;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+        background: #96cd44;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: #777;
+        margin-top: 50px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo" style="text-align: center; margin-bottom: 20px;">
+                <h1 style="color: white; font-size: 2.5rem; letter-spacing: 2px;">IJELLS</h1>
+                <h1 style="color: #b4ee57; font-size: 1.2rem; font-weight: normal;">International Journal of English Language, Literature & Studies</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li style="text-align: center;"><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="form-container">
+            <h2 style="text-align: center; margin-bottom: 10px;">Submit Your Manuscript</h2>
+            <p style="text-align: center; color: #ccc; margin-bottom: 30px; font-size: 0.9rem;">
+                Please fill out the details below. Ensure your paper adheres to our formatting guidelines.
+            </p>
+
+            <form action="upload.php" method="POST" enctype="multipart/form-data">
+                
+                <!-- ADDED name="title" HERE -->
+                <div class="form-group">
+                    <label>Paper Title</label>
+                    <input type="text" name="title" placeholder="Enter Title" required>
+                </div>
+
+                <!-- ADDED name="author" HERE -->
+                <div class="form-group">
+                    <label>Author Name(s)</label>
+                    <input type="text" name="author" placeholder="e.g. Dr. Shankar" required>
+                </div>
+
+                <!-- ADDED name="email" HERE -->
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email" placeholder="info@author.com" required>
+                </div>
+
+                <!-- ADDED name="category" HERE -->
+                <div class="form-group">
+                    <label>Category</label>
+                    <select name="category">
+                        <option>Literature</option>
+                        <option>Linguistics</option>
+                        <option>Cultural Studies</option>
+                        <option>Education</option>
+                    </select>
+                </div>
+
+                <!-- ADDED name="abstract" HERE -->
+                <div class="form-group">
+                    <label>Abstract</label>
+                    <textarea name="abstract" rows="6" placeholder="Paste your abstract here (200-300 words)..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Upload Manuscript (PDF/Doc)</label>
+                    <!-- name="fileToUpload" is already correct below -->
+                    <input type="file" name="fileToUpload" id="fileToUpload" accept=".pdf,.doc,.docx" required style="padding: 10px;">
+                </div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <!-- name="submit" is required for PHP check -->
+                    <button type="submit" name="submit" class="btn">Submit for Review</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 IJELLS. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
