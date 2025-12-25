@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Add this inside <head> to show icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IJRES - International Journal of Research in Educational Studies</title>
@@ -666,32 +668,24 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#submit">Submit</a></li>
+                <li><a href="submit.html">Submit</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
 
     <section class="hero" id="home">
         <div class="hero-content">
             <h2>Advancing Educational Research Worldwide</h2>
             <p>Publishing cutting-edge research that shapes the future of education</p>
             <div class="cta-buttons">
-                <a href="submit.html" class="btn btn-primary" style="background: var(--white); color: var(--primary); margin-left: 10px;">Submit Your Research</a>
+                <a href="submit.html" class="btn btn-primary" style="background:rgb(7, 6, 6); color: var(--primary); margin-left: 10px;">Submit Your Research</a>
                 <!-- <a href="submit.html" class="btn" style="background: var(--white); color: var(--primary); margin-left: 10px;">Submit Research</a> -->
-                <a href="#" class="btn btn-secondary" onclick="openTab(event, 'published-papers')">Browse Articles</a>
+                <a href="#" id="vijaya" class="btn btn-secondary" style="background:rgb(7, 6, 6);" onclick="openTab(event, 'published-papers')">Browse Articles</a>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -737,7 +731,7 @@
                 </div>
             </div>
 
-           
+          
             <div class="article-card">
                 <div class="article-badge">HIGHLY CITED</div>
                 <div class="article-content">
@@ -769,6 +763,59 @@
                     <a href="#" class="read-more">Read Full Article →</a>
                 </div>
             </div>
+
+
+            <div class="article-card">
+                <div class="article-badge">HIGHLY CITED</div>
+                <div class="article-content">
+                    <h3>Metacognitive Strategies in STEM Education: A Comprehensive Review</h3>
+                    <div class="article-meta">
+                        <span>👤 Prof. Michael Chen</span>
+                        <span>📅 Nov 2024</span>
+                        <span>👁️ 3.2k views</span>
+                    </div>
+                    <p class="article-excerpt">
+                        This systematic review analyzes the effectiveness of metacognitive teaching strategies in science, technology, engineering, and mathematics education, providing evidence-based recommendations for educators.
+                    </p>
+                    <a href="#" class="read-more">Read Full Article →</a>
+                </div>
+            </div>
+
+
+
+                <div class="article-card">
+                <div class="article-badge">HIGHLY CITED</div>
+                <div class="article-content">
+                    <h3>Metacognitive Strategies in STEM Education: A Comprehensive Review</h3>
+                    <div class="article-meta">
+                        <span>👤 Prof. Michael Chen</span>
+                        <span>📅 Nov 2024</span>
+                        <span>👁️ 3.2k views</span>
+                    </div>
+                    <p class="article-excerpt">
+                        This systematic review analyzes the effectiveness of metacognitive teaching strategies in science, technology, engineering, and mathematics education, providing evidence-based recommendations for educators.
+                    </p>
+                    <a href="#" class="read-more">Read Full Article →</a>
+                </div>
+            </div>
+
+                    <div class="article-card">
+                <div class="article-badge">HIGHLY CITED</div>
+                <div class="article-content">
+                    <h3>Metacognitive Strategies in STEM Education: A Comprehensive Review</h3>
+                    <div class="article-meta">
+                        <span>👤 Prof. Michael Chen</span>
+                        <span>📅 Nov 2024</span>
+                        <span>👁️ 3.2k views</span>
+                    </div>
+                    <p class="article-excerpt">
+                        This systematic review analyzes the effectiveness of metacognitive teaching strategies in science, technology, engineering, and mathematics education, providing evidence-based recommendations for educators.
+                    </p>
+                    <a href="#" class="read-more">Read Full Article →</a>
+                </div>
+            </div>
+
+
         </div>
     </div>
 
@@ -807,11 +854,17 @@
                         <span class="paper-number">Paper #124</span>
                     </div>
                     <div class="paper-actions">
-                        <button class="icon-btn">📥 Download</button>
-                        <button class="icon-btn">📎 Cite</button>
-                        <button class="icon-btn">🔗 Share</button>
+                        <a class="btn-download" href="https://github.com/veeravijayakumar/Jouranlisam-research-Sankar/raw/main/Images/111.pdf" download="111.pdf">
+                            <i class="fas fa-download"></i> 📥 Download PDF
+                        </a>
+                        <a class="btn-social btn-wa" href="https://wa.me/+919095869474" target="_blank" title="Share on WhatsApp">💬 </a>
+                        <a class="btn-social btn-tw" href="https://twitter.com/" target="_blank" title="Share on Twitter">🐦T</a>
+                        <a class="btn-social btn-li" href="https://www.linkedin.com/sharing/share-offsite/?url=" target="_blank" title="Share on LinkedIn">👔 L</a>
+                        <a class="btn-social btn-fb" href="https://www.facebook.com/" target="_blank" title="Share on Facebook"> F</a>
+                        <a class="btn-social btn-em" href="mailto:?subject=Check out this research paper&body=Link to paper here." title="Email this paper">✉️ </a>
                     </div>
                 </div>
+            </div>
                 <h3>The Impact of Gamification on Student Motivation in Online Learning Environments</h3>
                 <div class="article-meta">
                     <span>👤 Dr. James Wilson, Dr. Lisa Martinez</span>
@@ -830,9 +883,14 @@
                         <span class="paper-number">Paper #123</span>
                     </div>
                     <div class="paper-actions">
-                        <button class="icon-btn">📥 Download</button>
-                        <button class="icon-btn">📎 Cite</button>
-                        <button class="icon-btn">🔗 Share</button>
+                        <a class="btn-download" href="https://github.com/veeravijayakumar/Jouranlisam-research-Sankar/raw/main/Images/111.pdf" download="111.pdf">
+                            <i class="fas fa-download"></i> 📥 Download PDF
+                        </a>
+                        <a class="btn-social btn-wa" href="https://wa.me/+919095869474" target="_blank" title="Share on WhatsApp">💬 </a>
+                        <a class="btn-social btn-tw" href="https://twitter.com/" target="_blank" title="Share on Twitter">🐦T</a>
+                        <a class="btn-social btn-li" href="https://www.linkedin.com/sharing/share-offsite/?url=" target="_blank" title="Share on LinkedIn">👔 L</a>
+                        <a class="btn-social btn-fb" href="https://www.facebook.com/" target="_blank" title="Share on Facebook"> F</a>
+                        <a class="btn-social btn-em" href="mailto:?subject=Check out this research paper&body=Link to paper here." title="Email this paper">✉️ </a>
                     </div>
                 </div>
                 <h3>Cultural Competency in Teacher Training: A Global Perspective</h3>
@@ -853,9 +911,14 @@
                         <span class="paper-number">Paper #122</span>
                     </div>
                     <div class="paper-actions">
-                        <button class="icon-btn">📥 Download</button>
-                        <button class="icon-btn">📎 Cite</button>
-                        <button class="icon-btn">🔗 Share</button>
+                        <a class="btn-download" href="https://github.com/veeravijayakumar/Jouranlisam-research-Sankar/raw/main/Images/111.pdf" download="111.pdf">
+                            <i class="fas fa-download"></i> 📥 Download PDF
+                        </a>
+                        <a class="btn-social btn-wa" href="https://wa.me/+919095869474" target="_blank" title="Share on WhatsApp">💬 </a>
+                        <a class="btn-social btn-tw" href="https://twitter.com/" target="_blank" title="Share on Twitter">🐦T</a>
+                        <a class="btn-social btn-li" href="https://www.linkedin.com/sharing/share-offsite/?url=" target="_blank" title="Share on LinkedIn">👔 L</a>
+                        <a class="btn-social btn-fb" href="https://www.facebook.com/" target="_blank" title="Share on Facebook"> F</a>
+                        <a class="btn-social btn-em" href="mailto:?subject=Check out this research paper&body=Link to paper here." title="Email this paper">✉️ </a>
                     </div>
                 </div>
                 <h3>Formative Assessment Strategies in K-12 Mathematics Education</h3>
@@ -1197,4 +1260,112 @@
     </script>
 
 
+
+
+
+<!-- ACTION BAR: Download & Share -->
+<div class="action-bar">
+
+        <style>
+/* --- ACTION BAR STYLES --- */
+.action-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* Download Button */
+.btn-download {
+    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 6px rgba(40, 167, 69, 0.2);
+    transition: transform 0.2s;
+}
+
+.btn-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(40, 167, 69, 0.3);
+}
+
+/* Social Share Group */
+.social-share {
+    display: flex;
+    gap: 10px;
+}
+
+/* Individual Social Buttons */
+.btn-social {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-social:hover {
+    transform: translateY(-3px) scale(1.1);
+}
+
+/* Specific Colors */
+.btn-wa { background: #25D366; } /* WhatsApp */
+.btn-tw { background: #1DA1F2; } /* Twitter */
+.btn-li { background: #0077b5; } /* LinkedIn */
+.btn-fb { background: #1877F2; } /* Facebook */
+.btn-em { background: #EA4335; } /* Email */
+</style>
+    
+    <!-- 1. DOWNLOAD BUTTON -->
+    <!-- Replace 'file.pdf' with your actual file link -->
+    <a href="https://github.com/veeravijayakumar/Jouranlisam-research-Sankar/Images/111.pdf" download="paper.pdf" class="btn-download">
+        <i class="fas fa-download"></i> Download PDF
+    </a>
+
+    <!-- 2. SOCIAL MEDIA BUTTONS -->
+    <div class="social-share">
+        
+        <!-- Email -->
+        <a href="mailto:?subject=Interesting Research Paper&body=Check out this paper: http://yourwebsite.com/issues/paper1" class="btn-social btn-em" title="Share via Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <!-- WhatsApp -->
+        <!-- Note: Replace 'yourwebsite.com' with actual link -->
+        <a href="https://wa.me/+919095869474" target="_blank" class="btn-social btn-wa" title="Share on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- Twitter / X -->
+        <a href="https://twitter.com/" target="_blank" class="btn-social btn-tw" title="Share on Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=" target="_blank" class="btn-social btn-li" title="Share on LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://yourwebsite.com/issues/paper1" target="_blank" class="btn-social btn-fb" title="Share on Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        
+    </div>
+</div>
 
